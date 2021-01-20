@@ -9,7 +9,7 @@ body{
 }
 header{
     background-color: #000;
-    height: 100px;
+    height: 80px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -17,7 +17,9 @@ header{
 }
 nav ul{
     float: right;
-    margin-right: 20px;
+    margin-right: 50px;
+    position: relative;
+    top: -20px;
 }
 nav ul li{
     list-style: none;
@@ -50,15 +52,20 @@ a.active,a:hover{
     display: none;
 }
 .logo img,.image-logo{
-    max-width: 100%;
     width: 50px;
     background: none;
     border-radius: 50%;
+}
+img{
+    max-width: 100%;
 }
 .logo{
     display: flex;
     line-height: 50px;
     color: #fff;
+    margin-left: 60px;
+    position: relative;
+    top: 10px;
 }
 .section1{
     background-image: url(https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8YSUyMG1hbiUyMGxpc3RlbmluZyUyMHRvJTIwbXVzaWMlMjBzaXR0aW5nJTIwb24lMjBhJTIwY2FyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60);
@@ -67,9 +74,9 @@ a.active,a:hover{
     color: #fff;
     font-weight: bold;
     text-align: center;
-    padding: 20px;
-    height: 60vh;
+    padding: 30px;
     padding-top: 150px;
+    width: 100%;
 }
 .section1 h1{
     font-size: 3.5em;
@@ -157,7 +164,6 @@ li:hover{
     background-color: #222326;
     color: #fff;
     font-weight: normal;
-    display: inline-block
 }
 footer{
     display: grid;
@@ -182,13 +188,15 @@ footer ul li a{
 @media only screen and (max-width:789px){
     .checkbtn{
         display: block;
+        position: relative;
+        top: -50px;
     }
     nav ul{
     position: fixed;
     width: 80%;
     height: 100vh;
     background: #000;
-    top: 90px;
+    top: 0px;
     left: 100%;
     text-align: left;
     transition: all .5s;
@@ -206,7 +214,7 @@ footer ul li a{
     color: #1DB954;
     }
     #check:checked ~ ul{
-    left: 0;
+    left: 50px;
     }
     img{
         width: 100%;
@@ -216,6 +224,10 @@ footer ul li a{
     }
     .links{
         grid-template-columns: 1fr;
+    }
+    footer ul li{
+        padding: 0px;
+        margin: 0;
     }
     .section3 ul, .section3 div{
         padding: 10px;
