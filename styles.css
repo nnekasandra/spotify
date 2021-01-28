@@ -92,7 +92,7 @@ img{
     border-radius: 50%;
     padding: 20px;
     margin-right: 20px;
-    margin-top: 30px;
+    margin-top: 50px;
     font-weight: 700;
 }
 .socials i:hover{
@@ -185,8 +185,12 @@ footer ul li {
 footer ul li a{
     color: #919496;
 }
-@media only screen and (max-width:789px){
-    .checkbtn{
+@media only screen and (max-width:900px){
+    .music{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+    }
+        .checkbtn{
         display: block;
         position: relative;
         top: -50px;
@@ -200,6 +204,7 @@ footer ul li a{
     left: 100%;
     text-align: left;
     transition: all .5s;
+    z-index: 5;
     }
     nav ul li{
     display: block;
@@ -214,8 +219,10 @@ footer ul li a{
     color: #1DB954;
     }
     #check:checked ~ ul{
-    left: 50px;
+    left: 0px;
     }
+}
+@media only screen and (max-width:789px){
     img{
         width: 100%;
     }
@@ -225,6 +232,17 @@ footer ul li a{
     .links{
         grid-template-columns: 1fr;
     }
+    .section1 h1{
+    font-size: 2.5em;
+    } 
+    .section1 p{
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    }
+    .section2 h3{
+    font-size: 2.5em;
+    padding: 50px 1.5em;
+}
     footer ul li{
         padding: 0px;
         margin: 0;
